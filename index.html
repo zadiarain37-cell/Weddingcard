@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        @import url('https://googleapis.com');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f9f5f0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            background: white;
+            width: 90%;
+            max-width: 450px;
+            padding: 40px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(184, 134, 11, 0.15);
+            text-align: center;
+            border: 2px solid #dfba73;
+            position: relative;
+            margin: 20px;
+        }
+        h1 {
+            font-family: 'Alex Brush', cursive;
+            color: #b8860b;
+            font-size: 3.5rem;
+            margin: 10px 0;
+        }
+        h2 {
+            font-size: 1.2rem;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .ampersand {
+            font-family: 'Alex Brush', cursive;
+            font-size: 2.5rem;
+            color: #dfba73;
+            margin: 5px 0;
+        }
+        .details {
+            margin: 30px 0;
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        .date {
+            font-weight: 600;
+            color: #b8860b;
+            border-top: 1px solid #dfba73;
+            border-bottom: 1px solid #dfba73;
+            padding: 10px 0;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .btn {
+            display: inline-block;
+            background: #b8860b;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(184, 134, 11, 0.3);
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #966f0a;
+            transform: translateY(-2px);
+        }
+        .timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .time-box {
+            background: #fbf7f0;
+            padding: 10px;
+            border-radius: 8px;
+            min-width: 60px;
+            border: 1px solid #eee;
+        }
+        .time-box span {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #b8860b;
+        }
+        .time-box label {
+            font-size: 0.7rem;
+            color: #888;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>The Wedding of</h2>
+        <h1>Zeeshan</h1>
+        <div class="ampersand">&</div>
+        <h1>Ayesha</h1>
+        
+        <div class="details">
+            <p>Together with their families, they invite you to celebrate their wedding bliss.</p>
+            <div class="date">DECEMBER 25, 2026</div>
+            <p><strong>Venue:</strong> Royal Palm Marquee, Lahore<br><strong>Time:</strong> 07:00 PM</p>
+        </div>
+
+        <a href="https://google.com" target="_blank" class="btn">📍 View Wedding Venue</a>
+
+        <div class="timer">
+            <div class="time-box">
+                <span id="days">45</span>
+                <label>Days</label>
+            </div>
+            <div class="time-box">
+                <span id="hours">12</span>
+                <label>Hours</label>
+            </div>
+            <div class="time-box">
+                <span id="mins">30</span>
+                <label>Mins</label>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
